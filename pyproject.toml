@@ -1,0 +1,23 @@
+[project]
+name = "demo_project"
+version = "0.1.0"
+description = "Project with two demo modules: math and IO"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "paramiko",
+    "pyserial"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["demo_module_math", "demo_module_io"]
+
+[project.scripts]
+math-cli = "demo_module_math.cli:main"
+io-cli = "demo_module_io.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

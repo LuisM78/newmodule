@@ -1,0 +1,24 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+.my_env/
+my_env/
+
+# Installer logs
+pip-log.txt
+
+# pytest
+.cache/
+.pytest_cache/
+
+# VS Code
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
